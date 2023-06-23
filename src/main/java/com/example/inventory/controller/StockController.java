@@ -29,7 +29,7 @@ public class StockController {
         return stockService.updateStock(stockDTO);
     }
 
-    @DeleteMapping
+    @DeleteMapping("/deleteStock ")
     public boolean deleteStock(@RequestBody StockDTO stockDTO){
         return stockService.deleteStock(stockDTO);
     }

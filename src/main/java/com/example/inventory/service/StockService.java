@@ -37,7 +37,7 @@ public class StockService {
     }
 
     public boolean deleteStock(StockDTO stockDTO){
-        stockRepo.save(modelMapper.map(stockDTO, Stock.class));
+        stockRepo.delete(modelMapper.map(stockDTO, Stock.class));
         return true;
     }
 

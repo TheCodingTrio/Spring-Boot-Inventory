@@ -12,4 +12,7 @@ public interface StockRepo extends JpaRepository<Stock, String> {
 
     @Query(value = "SELECT * FROM STOCK WHERE ID = ?1 AND NAME = ?2",nativeQuery = true)
     Stock getStockByIDAndName(String stockId, String name);
+
+
+
 }
